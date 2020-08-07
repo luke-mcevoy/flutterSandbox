@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
             Text('The question'),
             RaisedButton(
               child: Text('Answer 1'),
-              onPressed: answerQuestion,
+              onPressed: () => print('Answer 1 chosen!'),
             ),
             RaisedButton(
               child: Text('Answer 2'),

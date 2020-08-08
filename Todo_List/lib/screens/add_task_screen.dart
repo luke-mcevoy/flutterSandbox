@@ -28,8 +28,13 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
       setState(() {
         _date = date;
       });
-      _dateController.text = _dateFormatter.format(date);
+      _dateController.text = _dateFormatter.format(_date);
     }
+  }
+
+  void dispose() {
+    _dateController.dispose();
+    super.dispose();
   }
 
   _submit() {

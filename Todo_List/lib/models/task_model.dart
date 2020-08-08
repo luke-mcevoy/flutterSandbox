@@ -24,9 +24,7 @@ class Task {
     return Task.withId(
       id: map['id'],
       title: map['title'],
-      date: DateTime.parse(
-        map['date'],
-      ),
+      date: DateTime.parse(map['date']),
       priority: map['priority'],
       status: map['status'],
     );

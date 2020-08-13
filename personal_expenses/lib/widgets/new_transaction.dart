@@ -51,7 +51,7 @@ class _NewTransactionState extends State<NewTransaction> {
                 labelText: 'Amount',
               ),
               controller: amountController,
-              keyboardType: TextInputType.number,
+              keyboardType: TextInputType.numberWithOptions(decimal: true),
               onSubmitted: (_) => submitData(),
             ),
             FlatButton(
